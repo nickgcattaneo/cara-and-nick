@@ -1,0 +1,57 @@
+/* TODO => add media query for small viewport to resize images */
+
+.img-slider-container {
+	display: flex;
+	min-height: 60vh;
+	max-height: 60vh;
+	height: 60vh;
+	width: auto;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+	.img-slider-container {
+		min-height: 180px;
+		max-height: 180px;
+		height: 180px;
+	}
+}
+
+.img-slider-img {
+	max-height: 100%;
+	width: auto;
+	padding: 0;
+	margin: 0;
+	display: none;
+	border: solid rgba(0, 0, 0, .25);
+}
+
+.img-slider-img-active {
+	display: block;
+}
+
+.img-slider-controller-left {
+	margin-right: 5vw;
+}
+
+.img-slider-controller-right {
+	margin-left: 5vw;
+}
+
+
+.img-slider-controller-left,
+.img-slider-controller-right {
+	color: rgba(0, 0, 0, .25);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-slider-controller-left:hover,
+.img-slider-controller-right:hover {
+	color: rgba(0, 0, 0, .5);
+}

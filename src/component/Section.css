@@ -1,0 +1,22 @@
+.section-heading,
+.section-container {
+	padding: 0;
+	margin: 0;
+}
+
+.section-container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section-container:nth-child(even) {
+	background-color: rgba(0, 0, 0, .025);
+}
+
+@media screen and (max-width: 1000px) {
+	.section-container {
+		height: auto
+	}
+}

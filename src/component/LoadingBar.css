@@ -1,0 +1,14 @@
+.loading-el {
+	position: absolute;
+	top: 20vh;
+	left: 20vw;
+	height: 10vh;
+	width: 60vw;
+	transition: opacity 1s;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.loading-el-complete {
+	opacity: 0;
+}
